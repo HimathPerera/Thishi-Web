@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+   
+}
+
+#logo{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    animation: fill-animation 2.5s ease forwards 4s;
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray: 374.08px;
+    stroke-dashoffset:374.08px;
+    animation: line-animation 2s ease-in forwards;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 593.9210205078125px;
+    stroke-dashoffset:593.9210205078125px;
+    animation: line-animation 2s ease-in forwards 0.3s;
+
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 515.5200805664062px;
+    stroke-dashoffset:515.5200805664062px;
+    animation: line-animation 2s ease-in forwards 0.6s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray:515.52001953125px;
+    stroke-dashoffset:515.52001953125px;
+    animation: line-animation 2s ease-in forwards 0.9s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 569.2803955078125px;
+    stroke-dashoffset:569.2803955078125px;
+    animation: line-animation 2s ease-in forwards 1.2s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 548.7936401367188px;
+    stroke-dashoffset:548.7936401367188px;
+    animation: line-animation 2s ease-in forwards 1.5s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 593.9200439453125px;
+    stroke-dashoffset:593.9200439453125px;
+    animation: line-animation 2s ease-in forwards 1.8s;
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 544.76904296875px;
+    stroke-dashoffset:544.76904296875px;
+    animation: line-animation 2s ease-in forwards 2.1s;
+}
+#logo path:nth-child(9){
+    stroke-dasharray: 671.6478271484375px;
+    stroke-dashoffset:671.6478271484375px;
+    animation: line-animation 2s ease-in forwards 2.4s;
+}
+#logo path:nth-child(10){
+    stroke-dasharray: 252.1600341796875px;
+    stroke-dashoffset:252.1600341796875px;
+    animation: line-animation 2s ease-in forwards 2.5s;
+}
+
+@keyframes line-animation {
+    to{
+        stroke-dashoffset :0px;
+       
+        
+    }
+}
+
+@keyframes fill-animation{
+    from{
+        fill: transparent;
+      }
+    to{
+        fill :white;
+    
+    }
+}
+#button-1:hover{
+    opacity: 0.5;
+   }
+#button-1{
+    cursor: pointer;
+    position: absolute;
+    left: 47.4%;
+    top:40rem;
+    animation :button-appear 15s ease forwards ;
+    
+}
+#button-2:hover{
+    opacity: 0.2;
+   }
+#button-2{
+    cursor: pointer;
+    position: absolute;
+    left:48%;
+    top:185%;
+    opacity: 0.3;
+    transform: rotate(180deg);
+}
+
+@keyframes button-appear{
+    from{
+        opacity: 0;
+    }
+}
+
+
+#hello{
+    height: 750px;
+}
+#hello-2{
+    height: 720px;
+}
+
+p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%,-50%);
+    width: 45%;
+    text-align:center ;
+}
+strong{
+    color: #9c0c75;
+}
+.glow{
+    text-decoration: none;
+    color:white;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+    }
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa-instagram:hover {
+   color: #d62976;
+}
+  .fa-instagram {
+   
+    color: white;
+  }
+  .fa-linkedin:hover {
+   color: #0e76a8;
+}
+  .fa-linkedin {
+   
+    color: white;
+  }
+  .fa-facebook:hover {
+    color: #3b5998;
+}
+  .fa-facebook {
+   
+    color: white;
+  }
+  .fa-twitter:hover {
+    color: #00acee;
+}
+  .fa-twitter {
+   
+    color: white;
+  }
+.social-icon{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 168%;
+}
+.trangle{
+    height: 200px;
+    width: 280px;
+    position: absolute;
+    left: 40%;
+    transform: rotate(180deg);
+   
+}
+.devoloper{
+    color: #ccc;
+    opacity: 0.2;
+    font-family: 'Baloo Da 2', cursive;
+    position: absolute;
+    left:43%;
+    top:177%
+}
+
+
+@media only screen and (max-width:800px) {
+    
+#logo{
+    width: 40rem;  
+}
+p{
+    font-size: 1rem;  
+}
+.trangle{
+    height: 170px;
+    width: 250px;
+    left: 33%;
+}
+.devoloper{
+   
+    left:38%;
+   
+}
+
+}
+@media only screen and (max-width:500px) {
+    #logo{
+        width: 24rem;  
+        
+    }
+    p{
+        font-size: 0.75rem;  
+    }
+    .trangle{
+        height: 110px;
+        width: 190px;
+        left: 25%;
+        position: absolute;
+        top:54rem;
+    }
+    .devoloper{
+   
+        left:34%;
+        font-size: 13px;
+       
+    }
+    .fa {
+        padding: 1px;
+        font-size: 10px;
+        width: 20px;
+       
+      }
+
+}
